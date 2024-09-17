@@ -11,6 +11,8 @@ import {
   faSoundcloud,
   faGoodreads,
 } from "@fortawesome/free-brands-svg-icons";
+import headshot from "./headshot.jpg";
+import VideoPlayer from "./VideoPlayer";
 
 const skills = [
   {
@@ -60,6 +62,7 @@ function App() {
   return (
     <div className="App">
       <Avatar />
+      <VideoPlayer />
       <Information />
       <SkillsList />
       <LinksList />
@@ -70,10 +73,7 @@ function App() {
 function Avatar() {
   return (
     <div className="headshot-container">
-      <img
-        className="headshot"
-        src=".\headshot.jpg"
-        alt="Josh's headshot"></img>
+      <img className="headshot" src={headshot} alt="Josh's headshot"></img>
     </div>
   );
 }
